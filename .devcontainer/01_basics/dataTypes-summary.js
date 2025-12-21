@@ -10,8 +10,8 @@
  const outsideTemp = null
  let userEmail;
 
- const id = symbol('123')
- const anotherId = symbol("123")
+ const id = Symbol('123')
+ const anotherId = Symbol("123")
 
  console.log(id == anotherId);
  const bigNumber = 1213214242352n
@@ -33,4 +33,32 @@
   }
 
   console.log(typeof bigNumber);
+
+  //+++++++++++++++++++++++++++++++++++++++++++++++
+
+  //there two type of memory
+  //Stack(primitive),  Heap(Non primitive)
+  
+  let myCollegename = "nit AP"
+
+  let anothername = "dipu"
+
+  console.log(myCollegename);
+  console.log(anothername);
+
+  let userOne = {
+   email: "user@google.com",
+   upi: "user@ybl"
+  }
+
+  let userTwo = userOne
+
+  userTwo = userOne
+  userTwo.email = "dipu@google.com"
+
+  console.log(userOne.email);
+  console.log(userTwo.email);
+  
+
+  
   
